@@ -19,7 +19,7 @@ public class visitor {
     private int slno;
     private String name;
     private String email;
-    private String phone;
+    private long phone;
     private String reason;
     private String toMeet;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
