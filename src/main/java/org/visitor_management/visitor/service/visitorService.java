@@ -43,9 +43,10 @@ public class visitorService {
     
                 return new ResponseEntity<Object>(map, HttpStatus.NOT_ACCEPTABLE);
             }else{
-                repository.saveAll(visitors);
+               
             }
         }
+        repository.saveAll(visitors);
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("success", "Record Added Successfully");
         map.put("Data", visitors);
